@@ -1,0 +1,257 @@
+{
+  "portfolio": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "shares": 8,
+      "costBasis": 118,
+      "marketValue": 940,
+      "unrealizedProfitLoss": 20,
+      "unrealizedReturnRate": 2.17
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "shares": 3,
+      "costBasis": 210.5,
+      "marketValue": 640,
+      "unrealizedProfitLoss": 10,
+      "unrealizedReturnRate": 1.58
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "shares": 2,
+      "costBasis": 1450,
+      "marketValue": 2900,
+      "unrealizedProfitLoss": -10,
+      "unrealizedReturnRate": -0.34
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com Inc.",
+      "shares": 1,
+      "costBasis": 3175,
+      "marketValue": 3176.89,
+      "unrealizedProfitLoss": 1.89,
+      "unrealizedReturnRate": 0.06
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla Inc.",
+      "shares": 3,
+      "costBasis": 650,
+      "marketValue": 1950,
+      "unrealizedProfitLoss": 50,
+      "unrealizedReturnRate": 2.63
+    },
+    {
+      "symbol": "NFLX",
+      "name": "Netflix Inc.",
+      "shares": 5,
+      "costBasis": 480,
+      "marketValue": 2500,
+      "unrealizedProfitLoss": 200,
+      "unrealizedReturnRate": 8.69
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "shares": 4,
+      "costBasis": 500,
+      "marketValue": 2400,
+      "unrealizedProfitLoss": 150,
+      "unrealizedReturnRate": 6.25
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "shares": 10,
+      "type": "buy",
+      "price": 117.32,
+      "date": "2023-10-01"
+    },
+    {
+      "id": 2,
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "shares": 5,
+      "type": "buy",
+      "price": 211.29,
+      "date": "2023-10-05"
+    },
+    {
+      "id": 3,
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "shares": 5,
+      "type": "sell",
+      "price": 120,
+      "date": "2023-10-10"
+    },
+    {
+      "id": 4,
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "shares": 2,
+      "type": "buy",
+      "price": 1450.72,
+      "date": "2023-10-12"
+    },
+    {
+      "id": 5,
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "shares": 3,
+      "type": "buy",
+      "price": 119.5,
+      "date": "2023-10-15"
+    },
+    {
+      "id": 6,
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "shares": 2,
+      "type": "sell",
+      "price": 210,
+      "date": "2023-10-18"
+    },
+    {
+      "id": 7,
+      "symbol": "AMZN",
+      "name": "Amazon.com Inc.",
+      "shares": 1,
+      "type": "buy",
+      "price": 3176.89,
+      "date": "2023-10-20"
+    },
+    {
+      "id": 8,
+      "symbol": "TSLA",
+      "name": "Tesla Inc.",
+      "shares": 4,
+      "type": "buy",
+      "price": 420.8,
+      "date": "2023-10-22"
+    },
+    {
+      "id": 9,
+      "symbol": "NFLX",
+      "name": "Netflix Inc.",
+      "shares": 6,
+      "type": "buy",
+      "price": 490.75,
+      "date": "2023-10-25"
+    },
+    {
+      "id": 10,
+      "symbol": "TSLA",
+      "name": "Tesla Inc.",
+      "shares": 2,
+      "type": "sell",
+      "price": 425,
+      "date": "2023-10-26"
+    },
+    {
+      "id": 11,
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "shares": 4,
+      "type": "buy",
+      "price": 500,
+      "date": "2023-10-27"
+    },
+    {
+      "id": 12,
+      "symbol": "NFLX",
+      "name": "Netflix Inc.",
+      "shares": 2,
+      "type": "sell",
+      "price": 495,
+      "date": "2023-10-28"
+    },
+    {
+      "id": 1730060229772,
+      "symbol": "NFLX",
+      "name": "Netflix Inc.",
+      "shares": 1,
+      "type": "buy",
+      "price": 520,
+      "date": "2024-10-27"
+    },
+    {
+      "id": 1730060232419,
+      "symbol": "NFLX",
+      "name": "Netflix Inc.",
+      "shares": 1,
+      "type": "sell",
+      "price": 520,
+      "date": "2024-10-27"
+    },
+    {
+      "id": 1730060295813,
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "shares": 1,
+      "type": "buy",
+      "price": 145,
+      "date": "2024-10-27"
+    },
+    {
+      "id": 1730060297515,
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "shares": 1,
+      "type": "sell",
+      "price": 145,
+      "date": "2024-10-27"
+    }
+  ],
+  "stockData": [
+    {
+      "symbol": "AAPL",
+      "displayName": "Apple Inc.",
+      "bid": 140,
+      "regularMarketPrice": 145
+    },
+    {
+      "symbol": "MSFT",
+      "displayName": "Microsoft Corporation",
+      "bid": 300,
+      "regularMarketPrice": 305
+    },
+    {
+      "symbol": "GOOGL",
+      "displayName": "Alphabet Inc.",
+      "bid": 2700,
+      "regularMarketPrice": 2750
+    },
+    {
+      "symbol": "AMZN",
+      "displayName": "Amazon.com Inc.",
+      "bid": 3200,
+      "regularMarketPrice": 3250
+    },
+    {
+      "symbol": "TSLA",
+      "displayName": "Tesla Inc.",
+      "bid": 650,
+      "regularMarketPrice": 670
+    },
+    {
+      "symbol": "NFLX",
+      "displayName": "Netflix Inc.",
+      "bid": 500,
+      "regularMarketPrice": 520
+    },
+    {
+      "symbol": "NVDA",
+      "displayName": "NVIDIA Corporation",
+      "bid": 720,
+      "regularMarketPrice": 730
+    }
+  ]
+}

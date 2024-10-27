@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import React, { useState, useEffect } from 'react';
 import { useGlobalState } from '../context/GlobalStateContext';
 import { FaDollarSign, FaExchangeAlt, FaCalendarAlt, FaBox } from 'react-icons/fa';
@@ -28,7 +27,7 @@ const Home: React.FC = () => {
 
   return (
     <div className={`container mx-auto mt-4 transition-opacity duration-700 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}>
-      <h2 className="text-2xl font-semibold text-center mb-4">Portfolio Overview</h2>
+      <h2 className="text-2xl font-semibold text-center mb-4">Home</h2>
       
       {/* Grid Layout for Left Column (Recent Transactions) and Right Column (Portfolio) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -41,10 +40,12 @@ const Home: React.FC = () => {
               <div
                 key={tx.id}
                 onClick={() => openModal(tx)}
-                className="bg-white border rounded-lg p-4 shadow-md cursor-pointer transform transition duration-300 hover:bg-blue-100 hover:scale-105"
+                className={`border rounded-lg p-4 shadow-md cursor-pointer transform transition duration-300 hover:scale-105
+                  ${tx.type === 'buy' ? 'bg-green-100 hover:bg-green-200' : 'bg-red-100 hover:bg-red-200'}`}
               >
                 <h4 className="font-semibold text-lg mb-2 flex items-center">
-                  <FaBox className="mr-2 text-blue-500" /> {tx.name} ({tx.symbol})
+                  <FaBox className={`mr-2 ${tx.type === 'buy' ? 'text-green-600' : 'text-red-600'}`} /> 
+                  {tx.name} ({tx.symbol})
                 </h4>
                 <p className="flex items-center">
                   <FaExchangeAlt className="mr-2 text-green-500" />
@@ -78,7 +79,8 @@ const Home: React.FC = () => {
         <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center">
           <div className="bg-white rounded-lg p-6 shadow-lg max-w-md mx-auto">
             <h3 className="text-2xl font-semibold mb-4 flex items-center">
-              <FaBox className="mr-2 text-blue-500" /> {selectedTransaction.name} ({selectedTransaction.symbol})
+              <FaBox className={`mr-2 ${selectedTransaction.type === 'buy' ? 'text-green-600' : 'text-red-600'}`} /> 
+              {selectedTransaction.name} ({selectedTransaction.symbol})
             </h3>
             <p className="text-lg flex items-center">
               <FaExchangeAlt className="mr-2 text-green-500" />

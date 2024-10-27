@@ -1,4 +1,3 @@
-// src/components/Nav.tsx
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -30,7 +29,7 @@ const Nav: React.FC = () => {
             <li key={item.name}>
               <Link
                 to={item.path}
-                className={`transition-all ${
+                className={`transition-all transform hover:scale-110 ${
                   location.pathname === item.path
                     ? 'text-blue-400 underline underline-offset-4'
                     : 'hover:text-blue-400'
